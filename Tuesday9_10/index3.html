@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conversion</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var output = document.getElementById('output');
+
+        var temperature = parseInt(prompt('Please enter a temperature number'));
+        var temperatureSymbol = prompt('Please enter a temperature symbol: F (Farenheit) or C (celsius)');
+
+        var temperatureSymbolChanged= temperatureSymbol.toUpperCase();
+
+        while(temperatureSymbolChanged != 'F' && temperatureSymbolChanged != 'C'){
+            temperatureSymbol = prompt('Please enter a temperature symbol: F (Farenheit) or C (celsius)');
+            temperatureSymbolChanged= temperatureSymbol.toUpperCase();
+        }
+
+        var temperatureResult;
+
+        if(temperatureSymbolChanged === 'C'){
+            temperatureResult = parseInt((temperature * 1.8) + 32);
+            output.innerHTML = "Temperature is: " + temperatureResult + " ºF";
+        } else if(temperatureSymbolChanged === 'F'){
+            temperatureResult = parseInt((temperature - 32)* 0.56);
+            output.innerHTML = "Temperature is: " + temperatureResult + " ºC";
+        }
+
+    </script>
+    
+</body>
+</html>

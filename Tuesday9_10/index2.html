@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="output"></div>
+
+    <script>
+        var output = document.getElementById('output');
+
+        var monthNumber = parseInt(prompt("Tell me a month number from 1 to 12"));
+
+        switch(monthNumber){
+            case 1:
+            output.innerHTML = "January";
+            break;
+            case 2:
+            output.innerHTML = "February";
+            break;
+            case 3:
+            output.innerHTML = "March";
+            break;
+            case 4:
+            output.innerHTML = "April";
+            break;
+            case 5:
+            output.innerHTML = "May";
+            break;
+            case 6:
+            output.innerHTML = "June";
+            break;
+            case 7:
+            output.innerHTML = "July";
+            break;
+            case 8:
+            output.innerHTML = "August";
+            break;
+            case 9:
+            output.innerHTML = "September";
+            break;
+            case 10:
+            output.innerHTML = "October";
+            break;
+            case 11:
+            output.innerHTML = "November";
+            break;
+            case 12:
+            output.innerHTML = "December";
+            break;
+            default:
+            output.innerHTML = "You are out of range";
+            break;
+        }
+    </script>
+</body>
+</html>
