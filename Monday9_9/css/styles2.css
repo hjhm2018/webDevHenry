@@ -1,0 +1,22 @@
+
+#box{
+    width: 300px;
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    border: 1px solid black
+}
+
+img{
+    width: 100px
+}
+
+.top{
+    background-color: lightgreen;
+    padding-bottom: 5px
+}
+
+h2{
+    color: brown;
+    font-size: 1.2em;
+}

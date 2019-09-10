@@ -1,0 +1,13 @@
+h1 {
+    width: 600px;
+    height: 300px;
+    background-color: yellow;
+    color: blue;
+    margin: 0 auto
+}
+
+img{
+    display: block;
+    margin: 0 auto;
+    width: 300px
+}

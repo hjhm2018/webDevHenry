@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Excercise</title>
+    <style>
+        #box{
+            background-color: blue;
+            color: white;
+            text-align: center;
+            width: 400px;
+            margin: 0 auto;
+            border-radius: 5px;
+            padding: 5px 0 5px 0
+        }
+
+        p{
+            font-weight: bold
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">
+
+        <h1 id="name"></h1>
+        <p id="english"></p>
+        <p id="math"></p>
+        <p id="science"></p>
+        <p id="average"></p>
+
+        <p id="message"></p>
+
+    </div>
+
+    <script>
+        var username = prompt('What is your Full name');
+        var englishGrade = parseFloat(prompt('What was your grade in english?'));
+        var mathGrade = parseFloat(prompt('What was your grade in math?'));
+        var scienceGrade = parseFloat(prompt('What was your grade in science?'));
+
+        var averageGrades = ((englishGrade + mathGrade + scienceGrade)/3).toFixed(2);
+
+        console.log(averageGrades);
+
+        var messageShown;
+
+        if(averageGrades >= 90) messageShown = "You are excelent";
+        else if(averageGrades >= 80) messageShown = "You did a good job";
+        else if(averageGrades >= 80) messageShown = "You did a good job";
+        else if(averageGrades >= 70) messageShown = "Not bad";
+        else messageShown = "Sorry, you failed. Please go home and take a rest";
+
+        document.getElementById('name').innerHTML = "Name: " + username;
+        document.getElementById('english').innerHTML = "English: " + englishGrade;
+        document.getElementById('math').innerHTML = "Math: " + mathGrade;
+        document.getElementById('science').innerHTML = "Science: " + scienceGrade;
+        document.getElementById('average').innerHTML = "Average: " + averageGrades;
+        document.getElementById('message').innerHTML = messageShown;
+    </script>
+    
+</body>
+</html>
